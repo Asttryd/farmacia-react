@@ -8,6 +8,8 @@ import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 import ListaCategorias from './components/categorias/listaCategorias/ListaCategorias';
 import FormularioCategoria from './components/categorias/formularioCategoria/FormularioCategoria';
 import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
+import FormularioProduto from './components/produtos/formularioProduto/FormularioProduto';
+import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
 
 function App() {
   return (
@@ -18,11 +20,12 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/produtos" element={<ListaProdutos />} />
               <Route path="/categorias" element={<ListaCategorias />} />
-              {/* <Route path="/cadastroProduto" element={<FormularioProduto />} />
-              <Route path="/editarProduto/:id" element={<FormularioProduto />} /> */}
-              {/* <Route path="/cadastroCategoria" element={<FormularioCategoria />} />
+              <Route path="/cadastroProduto" element={<FormularioProduto />} />
+              <Route path="/editarProduto/:id" element={<FormularioProduto />} />
+              <Route path="/deletarProduto/:id" element={<DeletarProduto />} />
+              <Route path="/cadastroCategoria" element={<FormularioCategoria />} />
               <Route path="/editarCategoria/:id" element={<FormularioCategoria />} />
-              <Route path="/deletarTema/:id" element={<DeletarCategoria />} /> */}
+              <Route path="/deletarTema/:id" element={<DeletarCategoria />} />
             </Routes>
           </div>
           <Footer />

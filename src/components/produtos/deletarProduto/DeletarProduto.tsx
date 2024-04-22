@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
 function DeletarProduto() {
@@ -16,10 +17,12 @@ function DeletarProduto() {
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, eos aperiam deserunt sit voluptas officia perspiciatis nisi vel unde.</p>
       </div>
       <div className="flex">
-        <button className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2' >Não</button>
-        <button className='w-full text-slate-100 bg-indigo-400 hover:bg-indigo-600 flex items-center justify-center' >
-          Sim
-        </button>
+      <Link to='/home' className='w-full text-slate-100 bg-blue-400 hover:bg-blue-800 flex items-center justify-center py-2'>
+          <button>Sim</button>
+        </Link>
+        <Link to='/produtos' className='text-slate-100 bg-red-400 hover:bg-red-700 w-full flex items-center justify-center'>
+          <button>Não</button>
+        </Link>
       </div>
     </div>
     </div>

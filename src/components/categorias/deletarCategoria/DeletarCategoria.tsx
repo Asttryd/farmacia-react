@@ -13,7 +13,7 @@ function DeletarCategoria() {
       <header className='py-2 px-6 bg-blue-600 text-white font-bold text-2xl'>Categoria</header>
       <p className='p-8 text-3xl bg-slate-200 h-full'>Remédios</p>
       <div className="flex">
-        <Link to='/home' className='w-full text-slate-100 bg-blue-400 hover:bg-indigo-800 flex items-center justify-center py-2'>
+        <Link to='/home' className='w-full text-slate-100 bg-blue-400 hover:bg-blue-800 flex items-center justify-center py-2'>
           <button>Sim</button>
         </Link>
         <Link to='/categorias' className='text-slate-100 bg-red-400 hover:bg-red-700 w-full flex items-center justify-center'>

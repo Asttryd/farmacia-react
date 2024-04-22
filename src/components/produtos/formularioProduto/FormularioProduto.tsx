@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -42,9 +43,11 @@ function FormularioProduto() {
            
           </select>
         </div>
-        <button  type='submit' className='rounded disabled:bg-slate-200 bg-blue-400 hover:bg-blue-800 text-white font-bold w-1/2 mx-auto block py-2'>
-         Cadastrar
-        </button>
+        <Link to='/home'>
+          <button type='submit' className='rounded disabled:bg-slate-200 bg-blue-400 hover:bg-blue-800 text-white font-bold w-1/2 mx-auto block py-2'>
+            Cadastrar
+          </button>
+        </Link>
       </form>
     </div>
   );

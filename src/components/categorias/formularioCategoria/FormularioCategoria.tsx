@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -22,12 +23,11 @@ function FormularioCategoria() {
 
                     />
                 </div>
-                <button
-                    className="rounded text-slate-100 bg-blue-400 hover:bg-blue-800 w-1/2 py-2 mx-auto block"
-                    type="submit"
-                >
-                    Cadastrar
-                </button>
+                <Link to='/home'>   
+                    <button className="rounded text-slate-100 bg-blue-400 hover:bg-blue-800 w-1/2 py-2 mx-auto block" type="submit">
+                        Cadastrar
+                    </button>
+                </Link>
             </form>
         </div>
     );
